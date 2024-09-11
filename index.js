@@ -1,7 +1,7 @@
 let map; // Declare map variable outside the event listener
 
 document.getElementById('getWeatherBtn').addEventListener('click', function() {
-    const city = document.getElementById('cityInput').value;
+    const city = document.getElementById('cityInput').value.trim();
     const apiKey = '89935844c238de048a31ef0d455713da';
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
